@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="batch-process" target="17" />
+      <module name="batch-process" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
