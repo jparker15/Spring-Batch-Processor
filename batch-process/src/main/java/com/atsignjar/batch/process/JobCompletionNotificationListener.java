@@ -24,7 +24,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
     @Override
     public void afterJob(JobExecution jobExecution) {
         if(jobExecution.getStatus() == BatchStatus.COMPLETED){
-            log.info("!!! Job Complete! Please verify the results");
+            log.info("!!! Job Complete! Please verify the results!");
 
             jbdcTemplate.query("SELECT first_name, last_name FROM people",
                     (rs,row) -> new Person(
